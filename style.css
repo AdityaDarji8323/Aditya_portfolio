@@ -1,3 +1,20 @@
+/* Highlight effect for active section on scroll */
+.reveal.active {
+  animation: highlightSection 1.2s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 0 0 4px #64ffda44, 0 8px 32px 0 rgba(99,102,241,0.18);
+}
+
+@keyframes highlightSection {
+  0% {
+    box-shadow: 0 0 0 0 #64ffda88, 0 8px 32px 0 rgba(99,102,241,0.18);
+  }
+  60% {
+    box-shadow: 0 0 0 12px #64ffda33, 0 8px 32px 0 rgba(99,102,241,0.18);
+  }
+  100% {
+    box-shadow: 0 0 0 4px #64ffda44, 0 8px 32px 0 rgba(99,102,241,0.18);
+  }
+}
 /* --- Creative Header Redesign --- */
 .creative-header {
   position: relative;
