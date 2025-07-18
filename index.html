@@ -1,0 +1,182 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Darji | Unity Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="creative-header">
+    <div class="header-bg-shape"></div>
+    <div class="header-flex">
+      <div class="profile-img-box">
+        <img src="https://img.icons8.com/ios-filled/120/64ffda/user-male-circle.png" alt="Profile" class="profile-img" />
+      </div>
+      <div class="header-info">
+        <h1>Aditya Nileshkumar Darji</h1>
+        <p class="account-info">AdityaDarji8323 · he/him</p>
+        <p>Unity Developer | Multiplayer Games | Photon PUN | UI/UX Enthusiast</p>
+        <div class="header-actions">
+          <a href="mailto:adityadarji08323@gmail.com" class="header-icon" title="Email"><img src="https://img.icons8.com/ios-filled/24/6366f1/new-post.png" alt="Email" /></a>
+          <a href="https://www.linkedin.com/in/aditya-darji-01b3bb192/" class="header-icon" target="_blank" title="LinkedIn"><img src="https://img.icons8.com/ios-filled/24/6366f1/linkedin.png" alt="LinkedIn" /></a>
+          <a href="https://github.com/AdityaDarji8323" class="header-icon" target="_blank" title="GitHub"><img src="https://img.icons8.com/ios-filled/24/6366f1/github.png" alt="GitHub" /></a>
+          <a href="ADITYA NILESHKUMAR DARJI_compressed.pdf" class="resume-btn" download="Aditya_Nileshkumar_Darji_Resume.pdf">Download Resume</a>
+        </div>
+        <div class="header-divider"></div>
+        <p class="header-phone">📞 +91 8511919776</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="container glass reveal">
+    <div class="info-card">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate Unity Developer with experience in 2D/3D game development, real-time multiplayer networking using Photon PUN, and UI/UX design. I'm always eager to contribute to innovative projects and collaborate with creative teams.
+      </p>
+    </div>
+  </section>
+
+  <section class="container glass reveal slide-in-left">
+    <div class="info-card">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Ludo Multiplayer Game</h3>
+          <ul>
+            <li>Built with Unity and Photon PUN.</li>
+            <li>Turn-based mechanics, dice roll logic, movement based on Ludo rules.</li>
+            <li>Real-time matchmaking, lobby management, Android & Windows support.</li>
+            <li>Custom UI/UX for smooth user experience.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>VR Puzzle Adventure</h3>
+          <ul>
+            <li>Immersive VR experience with interactive puzzles.</li>
+            <li>Unity XR Toolkit, custom shaders, and physics-based gameplay.</li>
+            <li>Optimized for Oculus Quest.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Space Shooter</h3>
+          <ul>
+            <li>2D arcade shooter with power-ups and boss fights.</li>
+            <li>Unity, C#, custom particle effects.</li>
+            <li>Published on Google Play.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container glass reveal slide-in-right">
+    <div class="info-card">
+      <h2>Experience</h2>
+      <h3>Unity Developer Trainee – Invisible Fiction, Anand</h3>
+      <p><strong>August 2024 – March 2025</strong></p>
+      <ul>
+        <li>Worked on 2D/3D games with real-time multiplayer logic.</li>
+        <li>Built dynamic object spawning systems.</li>
+        <li>Collaborated with senior devs on optimization & debugging.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container glass reveal slide-in-up">
+    <div class="info-card">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>MCA</strong> – CHARUSAT University (2023–2025) – CGPA: 6.05</li>
+        <li><strong>BCA</strong> – S.P. University (2020–2023) – CGPA: 6.76</li>
+        <li><strong>HSC</strong> – BRL High School (2018) – 45%</li>
+        <li><strong>SSC</strong> – BRL High School – 50%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container glass reveal zoom-in">
+    <h2>Skills</h2>
+    <div class="skills-buttons">
+      <button onclick="showEffect('Unity')">Unity 2D/3D</button>
+      <button onclick="showEffect('Photon')">Photon PUN</button>
+      <button onclick="showEffect('CSharp')">C#</button>
+      <button onclick="showEffect('UI')">UI/UX Design</button>
+      <button onclick="showEffect('Problem')">Problem Solving</button>
+    </div>
+    <div id="skill-effect" class="skill-effect"></div>
+  </section>
+
+  <section class="container glass reveal slide-in-down">
+    <h2>Contact</h2>
+    <form class="contact-form" onsubmit="return sendMailto(event)">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" rows="3" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info" style="color: #6366f1;">
+      <p>
+      <img src="https://img.icons8.com/ios-filled/18/6366f1/new-post.png" alt="Email" />
+      <a href="mailto:adityadarji08323@gmail.com" style="color: #6366f1; text-decoration: underline;">adityadarji08323@gmail.com</a>
+      </p>
+      <p>
+      <img src="https://img.icons8.com/ios-filled/18/6366f1/phone.png" alt="Phone" />
+      <span style="color: #6366f1;">+91 8511919776</span>
+      </p>
+      <p>
+      <img src="https://img.icons8.com/ios-filled/18/6366f1/marker.png" alt="Location" />
+      <span style="color: #6366f1;">Limdi Chowk, Nar Town, Anand, Gujarat</span>
+      </p>
+    </div>
+  </section>
+
+  <footer class="fade-in glass">
+    <p>© 2025 Aditya Darji. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/aditya-darji" target="_blank"><img src="https://img.icons8.com/ios-filled/24/6366f1/linkedin.png" alt="LinkedIn" /></a>
+      <a href="https://github.com/adityadarji" target="_blank"><img src="https://img.icons8.com/ios-filled/24/6366f1/github.png" alt="GitHub" /></a>
+    </div>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    function revealOnScroll() {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+        if (revealTop < windowHeight - revealPoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    function showEffect(skill) {
+      const effectBox = document.getElementById("skill-effect");
+      effectBox.innerHTML = `<p class="effect-text">${skill} Activated! 🎯</p>`;
+      effectBox.classList.add("show");
+      setTimeout(() => {
+        effectBox.classList.remove("show");
+      }, 2000);
+    }
+    window.addEventListener('scroll', revealOnScroll);
+
+    // Contact form mailto handler
+    function sendMailto(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const subject = encodeURIComponent('Portfolio Contact from ' + name);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+      window.location.href = `mailto:adityadarji08323@gmail.com?subject=${subject}&body=${body}`;
+      return false;
+    }
+  </script>
+</body>
+</html>
